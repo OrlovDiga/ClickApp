@@ -15,7 +15,7 @@ function httpTemplate(request, url) {
 
     http.onreadystatechange = function() {//Call a function when the state changes.
         if(http.status === 200) {
-            document.getElementById("kek").innerHTML = http.responseText;
+            document.getElementById("click_sum").innerHTML = http.responseText;
         } else {
             alert('Click app not available');
         }
