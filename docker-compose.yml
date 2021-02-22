@@ -4,7 +4,7 @@ services:
     container_name: click_app_container
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/click_db
-    image: privdim/click_app:0.0.0
+    image: privdim/click_app:1.0.0
     build: ./
     links:
       - "db"

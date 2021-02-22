@@ -1,4 +1,4 @@
-let url = 'http://localhost:8080/click';
+let url = '/click';
 let pathIncrement = '/increment';
 
 function getClick() {
@@ -15,7 +15,7 @@ function httpTemplate(request, url) {
 
     http.onreadystatechange = function() {//Call a function when the state changes.
         if(http.status === 200) {
-            document.getElementById("click_sum").innerHTML = http.responseText;
+            document.getElementById("click_sum").innerText = http.responseText;
         } else {
             alert('Click app not available');
         }

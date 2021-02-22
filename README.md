@@ -16,31 +16,25 @@ Testing work to Java Developer.
 
 ## Installation
 
-### Use a maven
-
-```bash
-git clone git@github.com:OrlovDiga/ClickApp.git
-cd PROJECT_ROOT
-mvn clean package
-java -jar target/click_listrener_app-0.0.1-SNAPSHOT.jar
-```
-
-Also before, you need to start Postgres database + change *```application.properties```*
-
-You can go to ./db and execute:
-```bash
-docker build -t click_db .
-docker run -p 5432:5432 click_db
-```
-
 ### Use a docker
 ```bash
 git clone git@github.com:OrlovDiga/ClickApp.git
 cd PROJECT_ROOT
-docker-compose up --build 
+docker-compose up --build
 ```
 
 ## Usage
+
+### Usage web application
+
+Open any browser and go to http://localhost:8081/index.html
+
+You will see this:
+
+![alt text](https://github.com/OrlovDiga/ClickApp/blob/master/.git_files/startImage.png?raw=true)
+
+
+### Usage api
 
 This application has multiple entry points:
 
