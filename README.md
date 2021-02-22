@@ -20,7 +20,7 @@ Testing work to Java Developer.
 ```bash
 git clone git@github.com:OrlovDiga/ClickApp.git
 cd PROJECT_ROOT
-mvn clean package
+mvn clean package (optional. else don't execute, then pull from dockerHub)
 docker-compose up --build
 ```
 
