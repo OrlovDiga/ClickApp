@@ -1,5 +1,5 @@
 # Click App
-
+[![Build Status](https://travis-ci.com/OrlovDiga/ClickApp.svg?branch=master)](https://travis-ci.com/OrlovDiga/ClickApp)
 Testing work to Java Developer.
 
 <details><summary>Technical assignment:</summary>
