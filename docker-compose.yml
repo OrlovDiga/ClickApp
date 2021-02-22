@@ -1,0 +1,20 @@
+version: '3'
+services:
+  click_app:
+    container_name: click_app_container
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/click_db
+    image: privdim/click_app:0.0.0
+    build: ./
+    links:
+      - "db"
+    ports:
+      - 8081:8080
+    depends_on:
+      - db
+  db:
+    container_name: db
+    image: privdim/db
+    build: ./.db
+    ports:
+      - 5432:5432
